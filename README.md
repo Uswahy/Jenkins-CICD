@@ -1,14 +1,13 @@
 # Jenkins-CICD
-This Jenkins pipeline is designed to automate the CI/CD (Continuous Integration/Continuous Deployment) process for a simple Node.js application that's containerized using Docker. Here’s what each part of the pipeline does:
-🔁 1. Cloning the Repository
+This Jenkins pipeline is designed to automate the CI/CD (Continuous Integration/Continuous Deployment) process for a simple Node.js application that's containerized using Docker.
+1. Cloning the Repository
 The pipeline connects to your GitHub repository and pulls the latest code from the main branch. This ensures that Jenkins always builds the most up-to-date version of your project.
 
 git branch: 'main', url: 'https://github.com/Uswahy/DockerWebApp.git'
 
-📦 2. Installing Dependencies
-Jenkins runs npm install inside the workspace to install all the required Node.js dependencies listed in package.json. This is essential to make sure the app has everything it needs to run.
+✅Access the App in Browser:
 
-bat 'npm install'
+http://localhost:4000
 
 ⚙️ Jenkins CI/CD Pipeline Setup
 ✅ Requirements
